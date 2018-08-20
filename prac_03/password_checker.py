@@ -17,15 +17,20 @@ def main():
     print("\t1 or more uppercase characters")
     print("\t1 or more lowercase characters")
     print("\t1 or more numbers")
+    password = get_password()
+
+    secret_password = "*" * len(password)
+    print("Your {0}-character password is valid: {1}".format(len(password), secret_password))
+
+
+def get_password():
     if SPECIAL_CHARS_REQUIRED:
         print("\tand 1 or more special characters: ", SPECIAL_CHARACTERS)
     password = input("> ")
     while not is_valid_password(password):
         print("Invalid password!")
         password = input("> ")
-
-    secret_password = "*" * len(password)
-    print("Your {0}-character password is valid: {1}".format(len(password), secret_password))
+    return password
 
 
 def is_valid_password(password):
@@ -51,7 +56,6 @@ def is_valid_password(password):
     # if any of the 'normal' counts are zero, return False
     if count_lower == 0 or count_upper == 0 or count_digit == 0:
         return False
-
 
     # if we get here (without returning False), then the password must be valid
     return True
