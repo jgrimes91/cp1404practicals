@@ -27,7 +27,7 @@ def get_password():
     if SPECIAL_CHARS_REQUIRED:
         print("\tand 1 or more special characters: ", SPECIAL_CHARACTERS)
     password = input("> ")
-    while not is_valid_password(password):
+    while not is_valid_password(password): 
         print("Invalid password!")
         password = input("> ")
     return password
