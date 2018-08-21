@@ -6,7 +6,7 @@ def main():
 
     while user_name not in usernames:
         print("Access Denied")
-        user_name = input(">>> ")
+        user_name = input("Please enter a valid username: ")
     else:
         print("Access Granted")
 
