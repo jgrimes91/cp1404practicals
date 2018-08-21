@@ -8,7 +8,7 @@ MAX_NUMBER = 45
 def main():
     """Quick picks program - choose a random set of numbers"""
     user_pick = int(input("How many quick picks? "))
-    while user_pick < 0:
+    while user_pick <= 0:
         print("Please choose a valid number")
         user_pick = int(input("How many quick picks? "))
 
