@@ -1,0 +1,31 @@
+    def main():
+    print(Reading Tracker 1.0 - Jessica Grimes)
+    in_file = open("books.csv", "+r")
+    book_list = "books.txt".append
+    print(x amount of books loaded books.csv)
+
+    user_input = input(menu).upper
+    user_input = " "
+    while user_input !="Q"
+        print (menu)
+        if user_input == "L"
+            print(book_list)
+        elif user_input == "A"
+            add_book()
+        elif user_input == "M"
+            mark_book()
+        else:
+            print(x books saved to csv)
+            quit
+def mark_book(book_list):
+
+
+
+def add_book(book_list):
+
+    title_input = input(Title: )
+    if title_name == " ":
+        print(Input cannot be blank)
+        title_name = input(Title: )
+
+    author_input = input(Author: )
