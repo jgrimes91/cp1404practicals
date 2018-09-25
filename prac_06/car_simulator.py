@@ -1,4 +1,5 @@
 from prac_06.Car import Car
+from prac_06.Date import Date
 
 MENU = "Menu: \nd) drive\nr) refuel \nq) quit"
 

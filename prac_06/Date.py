@@ -4,6 +4,6 @@ class Date:
         self.month = month
         self.year = year
 
+    def __str__(self):
+        return "The is {}, {}, {}".format(self.day, self.month, self.year)
 
-    # def __str__(self):
-    #     return
