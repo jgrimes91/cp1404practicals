@@ -4,6 +4,7 @@ Car class
 """
 from prac_08.Car import Car
 
+
 class Taxi(Car):
     """Specialised version of a Car that includes fare costs."""
 
