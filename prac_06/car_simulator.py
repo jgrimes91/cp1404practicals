@@ -1,5 +1,4 @@
 from prac_06.Car import Car
-from prac_06.Date import Date
 
 MENU = "Menu: \nd) drive\nr) refuel \nq) quit"
 
@@ -27,10 +26,10 @@ def main():
         elif choice == "r":
             refuel = int(input("How many units do you want to add to the car?"))
             while refuel < 0:
-                print("Fuel must be >= 0")
+                print("Fuel must be > 0")
                 refuel = int(input("How many units do you want to add to the car?"))
-                refuel_car = car.fuel(refuel)
-                print("Added {} units of fuel".format(refuel_car))
+            refuel_car = car.fuel(refuel)
+            print("Added {} units of fuel".format(refuel_car))
         else:
             print("Invalid Choice")
             print()
